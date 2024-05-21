@@ -1,0 +1,103 @@
+DataParallel(
+  (module): Model(
+    (fc1): Linear(in_features=43, out_features=500, bias=True)
+    (fc2): Linear(in_features=500, out_features=1089, bias=True)
+    (conv1): Conv2d(1, 32, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3))
+    (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv3): Conv2d(32, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv4): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv5): Conv2d(16, 8, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (conv6): Conv2d(8, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+)
+
+Epoch: 1/200, Training Loss: 0.0110429520, PSNR: 21.7606, Time taken: 33.05 seconds, Total time taken: 33.06 seconds
+Saved best model at epoch 1 with training loss: 0.011043
+Epoch: 2/200, Training Loss: 0.0091320912, PSNR: 22.5171, Time taken: 32.68 seconds, Total time taken: 65.75 seconds
+Saved best model at epoch 2 with training loss: 0.009132
+Epoch: 3/200, Training Loss: 0.0088937688, PSNR: 22.6617, Time taken: 32.76 seconds, Total time taken: 98.53 seconds
+Saved best model at epoch 3 with training loss: 0.008894
+Epoch: 4/200, Training Loss: 0.0087503660, PSNR: 22.7181, Time taken: 32.83 seconds, Total time taken: 131.37 seconds
+Saved best model at epoch 4 with training loss: 0.008750
+Epoch: 5/200, Training Loss: 0.0086195238, PSNR: 22.8058, Time taken: 32.79 seconds, Total time taken: 164.17 seconds
+Saved best model at epoch 5 with training loss: 0.008620
+Epoch: 6/200, Training Loss: 0.0081960459, PSNR: 23.2697, Time taken: 32.79 seconds, Total time taken: 197.00 seconds
+Saved best model at epoch 6 with training loss: 0.008196
+Epoch: 7/200, Training Loss: 0.0081773634, PSNR: 23.2722, Time taken: 32.91 seconds, Total time taken: 229.91 seconds
+Saved best model at epoch 7 with training loss: 0.008177
+Epoch: 8/200, Training Loss: 0.0081622544, PSNR: 23.2783, Time taken: 32.85 seconds, Total time taken: 262.78 seconds
+Saved best model at epoch 8 with training loss: 0.008162
+Epoch: 9/200, Training Loss: 0.0081464248, PSNR: 23.2842, Time taken: 32.78 seconds, Total time taken: 295.57 seconds
+Saved best model at epoch 9 with training loss: 0.008146
+Epoch: 10/200, Training Loss: 0.0081305656, PSNR: 23.2927, Time taken: 32.79 seconds, Total time taken: 328.37 seconds
+Saved best model at epoch 10 with training loss: 0.008131
+Epoch: 11/200, Training Loss: 0.0080755477, PSNR: 23.3654, Time taken: 32.90 seconds, Total time taken: 361.27 seconds
+Saved best model at epoch 11 with training loss: 0.008076
+Epoch: 12/200, Training Loss: 0.0080711679, PSNR: 23.3690, Time taken: 36.04 seconds, Total time taken: 397.35 seconds
+Saved best model at epoch 12 with training loss: 0.008071
+Epoch: 13/200, Training Loss: 0.0080688759, PSNR: 23.3699, Time taken: 37.41 seconds, Total time taken: 434.81 seconds
+Saved best model at epoch 13 with training loss: 0.008069
+Epoch: 14/200, Training Loss: 0.0080667075, PSNR: 23.3711, Time taken: 37.35 seconds, Total time taken: 472.19 seconds
+Saved best model at epoch 14 with training loss: 0.008067
+Epoch: 15/200, Training Loss: 0.0080645976, PSNR: 23.3724, Time taken: 37.27 seconds, Total time taken: 509.50 seconds
+Saved best model at epoch 15 with training loss: 0.008065
+Epoch: 16/200, Training Loss: 0.0080565823, PSNR: 23.3854, Time taken: 37.13 seconds, Total time taken: 546.64 seconds
+Saved best model at epoch 16 with training loss: 0.008057
+Epoch: 17/200, Training Loss: 0.0080561438, PSNR: 23.3849, Time taken: 37.21 seconds, Total time taken: 583.89 seconds
+Saved best model at epoch 17 with training loss: 0.008056
+Epoch: 18/200, Training Loss: 0.0080558921, PSNR: 23.3847, Time taken: 37.12 seconds, Total time taken: 621.02 seconds
+Saved best model at epoch 18 with training loss: 0.008056
+Epoch: 19/200, Training Loss: 0.0080556536, PSNR: 23.3847, Time taken: 37.11 seconds, Total time taken: 658.15 seconds
+Saved best model at epoch 19 with training loss: 0.008056
+Epoch: 20/200, Training Loss: 0.0080554209, PSNR: 23.3848, Time taken: 37.11 seconds, Total time taken: 695.27 seconds
+Saved best model at epoch 20 with training loss: 0.008055
+Epoch: 21/200, Training Loss: 0.0080545704, PSNR: 23.3859, Time taken: 37.39 seconds, Total time taken: 732.68 seconds
+Saved best model at epoch 21 with training loss: 0.008055
+Epoch: 22/200, Training Loss: 0.0080544758, PSNR: 23.3862, Time taken: 37.12 seconds, Total time taken: 769.84 seconds
+Saved best model at epoch 22 with training loss: 0.008054
+Epoch: 23/200, Training Loss: 0.0080544388, PSNR: 23.3863, Time taken: 37.42 seconds, Total time taken: 807.28 seconds
+Saved best model at epoch 23 with training loss: 0.008054
+Epoch: 24/200, Training Loss: 0.0080544091, PSNR: 23.3863, Time taken: 37.14 seconds, Total time taken: 844.42 seconds
+Saved best model at epoch 24 with training loss: 0.008054
+Epoch: 25/200, Training Loss: 0.0080543821, PSNR: 23.3863, Time taken: 37.29 seconds, Total time taken: 881.73 seconds
+Saved best model at epoch 25 with training loss: 0.008054
+Epoch: 26/200, Training Loss: 0.0080542472, PSNR: 23.3865, Time taken: 37.08 seconds, Total time taken: 918.86 seconds
+Saved best model at epoch 26 with training loss: 0.008054
+Epoch: 27/200, Training Loss: 0.0080542441, PSNR: 23.3864, Time taken: 37.25 seconds, Total time taken: 956.12 seconds
+Saved best model at epoch 27 with training loss: 0.008054
+Epoch: 28/200, Training Loss: 0.0080542418, PSNR: 23.3864, Time taken: 37.07 seconds, Total time taken: 993.20 seconds
+Saved best model at epoch 28 with training loss: 0.008054
+Epoch: 29/200, Training Loss: 0.0080542398, PSNR: 23.3863, Time taken: 37.08 seconds, Total time taken: 1030.29 seconds
+Saved best model at epoch 29 with training loss: 0.008054
+Epoch: 30/200, Training Loss: 0.0080542379, PSNR: 23.3863, Time taken: 37.33 seconds, Total time taken: 1067.67 seconds
+Saved best model at epoch 30 with training loss: 0.008054
+Epoch: 31/200, Training Loss: 0.0080542245, PSNR: 23.3863, Time taken: 37.37 seconds, Total time taken: 1105.05 seconds
+Saved best model at epoch 31 with training loss: 0.008054
+Epoch: 32/200, Training Loss: 0.0080542245, PSNR: 23.3863, Time taken: 37.17 seconds, Total time taken: 1142.24 seconds
+Saved best model at epoch 32 with training loss: 0.008054
+Epoch: 33/200, Training Loss: 0.0080542245, PSNR: 23.3863, Time taken: 37.10 seconds, Total time taken: 1179.35 seconds
+Saved best model at epoch 33 with training loss: 0.008054
+Epoch: 34/200, Training Loss: 0.0080542244, PSNR: 23.3863, Time taken: 37.32 seconds, Total time taken: 1216.69 seconds
+Saved best model at epoch 34 with training loss: 0.008054
+Epoch: 35/200, Training Loss: 0.0080542244, PSNR: 23.3863, Time taken: 37.09 seconds, Total time taken: 1253.81 seconds
+Saved best model at epoch 35 with training loss: 0.008054
+Epoch: 36/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.08 seconds, Total time taken: 1290.93 seconds
+Saved best model at epoch 36 with training loss: 0.008054
+Epoch: 37/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.31 seconds, Total time taken: 1328.28 seconds
+Epoch: 38/200, Training Loss: 0.0080542242, PSNR: 23.3863, Time taken: 37.08 seconds, Total time taken: 1365.36 seconds
+Epoch: 39/200, Training Loss: 0.0080542242, PSNR: 23.3863, Time taken: 37.31 seconds, Total time taken: 1402.67 seconds
+Epoch: 40/200, Training Loss: 0.0080542242, PSNR: 23.3863, Time taken: 37.37 seconds, Total time taken: 1440.04 seconds
+Epoch: 41/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.33 seconds, Total time taken: 1477.36 seconds
+Saved best model at epoch 41 with training loss: 0.008054
+Epoch: 42/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.32 seconds, Total time taken: 1514.69 seconds
+Epoch: 43/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.15 seconds, Total time taken: 1551.85 seconds
+Epoch: 44/200, Training Loss: 0.0080542242, PSNR: 23.3863, Time taken: 37.09 seconds, Total time taken: 1588.93 seconds
+Epoch: 45/200, Training Loss: 0.0080542242, PSNR: 23.3863, Time taken: 37.08 seconds, Total time taken: 1626.02 seconds
+Epoch: 46/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.35 seconds, Total time taken: 1663.36 seconds
+Epoch: 47/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.14 seconds, Total time taken: 1700.50 seconds
+Epoch: 48/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.45 seconds, Total time taken: 1737.95 seconds
+Epoch: 49/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.56 seconds, Total time taken: 1775.51 seconds
+Epoch: 50/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.11 seconds, Total time taken: 1812.62 seconds
+Epoch: 51/200, Training Loss: 0.0080542241, PSNR: 23.3863, Time taken: 37.06 seconds, Total time taken: 1849.68 seconds
+Early stopping triggered
+Training completed in: 1849.68 seconds

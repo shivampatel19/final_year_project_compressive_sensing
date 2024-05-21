@@ -3,6 +3,83 @@ import cv2
 import matplotlib.pyplot as plt
 from bm3d import bm3d
 
+def normalize(v):
+    return v / np.sqrt(v.dot(v))
+
+def generate_phi(x, y):
+    np.random.seed(333)
+    phi = np.random.normal(size=(x, y))
+    n = len(phi)
+    
+    # Perform Gram-Schmidt orthonormalization
+    phi[0, :] = normalize(phi[0, :])
+    
+    for i in range(1, n):
+        Ai = phi[i, :]
+        for j in range(0, i):
+            Aj = phi[j, :]
+            t = Ai.dot(Aj)
+            Ai = Ai - t * Aj
+        phi[i, :] = normalize(Ai)
+        
+    return phi
+
+def save_image(image_data, save_path):
+    """
+    Save the image to the specified path.
+    
+    Parameters:
+    image_data (numpy array): Image data in numpy array format.
+    save_path (str): Path to save the image.
+    """
+    cv2.imwrite(save_path, cv2.cvtColor(image_data, cv2.COLOR_RGB2BGR))
+
+
+def add_padding(image, pad_width=50):
+    """
+    Adds padding to the right and bottom of a 2D or 3D image.
+    
+    Parameters:
+        image (numpy.ndarray): The input image (2D or 3D).
+        pad_width (int): The width of the padding to add (default is 50).
+        
+    Returns:
+        numpy.ndarray: The padded image.
+    """
+    if image.ndim == 2:
+        # For 2D images
+        padded_image = np.pad(image, ((0, pad_width), (0, pad_width)), mode='constant')
+    elif image.ndim == 3:
+        # For 3D images
+        padded_image = np.pad(image, ((0, pad_width), (0, pad_width), (0, 0)), mode='constant')
+    else:
+        raise ValueError("The input image must be either 2D or 3D.")
+    
+    return padded_image
+
+def remove_padding(image, pad_width=50):
+    """
+    Removes padding from the right and bottom of a 2D or 3D image.
+    
+    Parameters:
+        image (numpy.ndarray): The input image (2D or 3D) with padding.
+        pad_width (int): The width of the padding to remove (default is 50).
+        
+    Returns:
+        numpy.ndarray: The image without padding.
+    """
+    if image.ndim == 2:
+        # For 2D images
+        unpadded_image = image[:-pad_width, :-pad_width]
+    elif image.ndim == 3:
+        # For 3D images
+        unpadded_image = image[:-pad_width, :-pad_width, :]
+    else:
+        raise ValueError("The input image must be either 2D or 3D.")
+    
+    return unpadded_image
+
+
 def apply_bm3d_denoiser(rgb_image, sigma):
     """
     Apply BM3D denoiser to an RGB image using the bm3d library.
